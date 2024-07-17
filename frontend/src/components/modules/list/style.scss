@@ -1,0 +1,43 @@
+.list__main {
+  width: 100%;
+  color: #ffffff;
+
+  .list__title {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 50px;
+  }
+
+  .wrapper {
+    position: relative;
+
+    .sliderArrow {
+      width: 50px;
+      height: 100%;
+      background-color: rgba(22, 22, 22, 0.8);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: 99;
+      cursor: pointer;
+
+      &:first-child {
+        left: 0;
+      }
+      &:last-child {
+        right: 0;
+      }
+    }
+
+    .container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-left: 50px;
+      transform: translateX(0);
+      transition: all 1s ease;
+    }
+  }
+}
